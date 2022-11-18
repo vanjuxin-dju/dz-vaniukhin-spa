@@ -21,12 +21,12 @@ class Information extends Component {
                 <div className="container-fluid p-0">
                     <div className="row">
                         <div className="col-md pb-3">
-                            <img className="photo" src="/photo-placeholder.png" alt="Photo"/>
+                            <img className="photo" src="/photo.png" alt="Photo"/>
                         </div>
                         <div className="col-md col-xl-7 col-xxl-8">
-                            <p>Hi, everyone! My name is Dzmitry, and I am a programmer with {this.state.experience}+ years of experience. I develop web apps using Vue and React.</p>
+                            <p>Hi, everyone! My name is Dzmitry, and I am a Front-end developer with {this.state.experience}+ years of experience. I develop web apps using Vue and React.</p>
                             <p>I gratuated from Grodno State University with a diploma on software engineering and with a degree of master of technical sciences.</p>
-                            <p>I also had some experience with backend development using Java programming language.</p>
+                            <p>I also had experience in backend development using Java programming language in the beginning of my career.</p>
                             <p>My hobbies include astronomy, cooking, DIY, and music.</p>
                         </div>
                     </div>
