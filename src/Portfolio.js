@@ -26,15 +26,10 @@ class Portfolio extends Component {
                     url: "https://partneredge.sap.com"
                 },
                 {
-                    image: "/dummy.png",
-                    title: "Lorem",
-                    url: "https://www.sap.com"
+                    image: "/this-site.png",
+                    title: "This website",
+                    url: ""
                 },
-                {
-                    image: "/dummy.png",
-                    title: "Lorem",
-                    url: "https://www.sap.com"
-                }
             ]
         };
     }
