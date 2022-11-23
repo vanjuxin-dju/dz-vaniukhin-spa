@@ -1,10 +1,11 @@
 const path = require("path");
 const webpack = require("webpack");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    bundle: "./src/index.js",
-    clientlibs: "./src/clientlibs.js"
+    "bundle": "./src/index.js",
+    "clientlibs": "./src/clientlibs.js"
   },
   mode: "development",
   module: {
@@ -17,7 +18,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          "css-loader"
+        ]
       }
     ]
   },
@@ -33,5 +39,8 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin()
+  ]
 };
