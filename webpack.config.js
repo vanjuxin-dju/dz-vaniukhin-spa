@@ -17,17 +17,50 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
+        test: /\.(le|c)ss$/,
+        exclude: /(node_modules|bower_components)/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
           },
-          "css-loader"
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "less-loader"
+          }
+        ]
+      },
+      {
+        test: /\.s[ac]ss$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer"
+                  ],
+                ],
+              }
+            }
+          },
+          {
+            loader: "sass-loader"
+          }
         ]
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: { extensions: ["*", ".js", ".jsx", ".css", ".less"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
