@@ -6,27 +6,27 @@ class Portfolio extends Component {
         this.state = {
             cards : [
                 {
-                    image: "/price-list.png",
+                    image: "/pics/price-list.png",
                     title: "Price Lists",
                     url: "https://www.sap.com/products/technology-platform/price-list/list.cpea.html"
                 },
                 {
-                    image: "/estimator.png",
+                    image: "/pics/estimator.png",
                     title: "Estimator",
                     url: "https://www.sap.com/products/technology-platform/price-list/estimator-tool.html"
                 },
                 {
-                    image: "/sap-search.png",
+                    image: "/pics/sap-search.png",
                     title: "SAP Search",
                     url: "https://search.sap.com/search.html"
                 },
                 {
-                    image: "/partneredge.png",
+                    image: "/pics/partneredge.png",
                     title: "SAP Partner portal",
                     url: "https://partneredge.sap.com"
                 },
                 {
-                    image: "/this-site.png",
+                    image: "/pics/this-site.png",
                     title: "This website",
                     url: ""
                 },

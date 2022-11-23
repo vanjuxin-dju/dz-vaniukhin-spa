@@ -21,7 +21,7 @@ class Information extends Component {
                 <div className="container-fluid p-0">
                     <div className="row">
                         <div className="col-md pb-3">
-                            <img className="photo" src="/photo.png" alt="Photo"/>
+                            <img className="photo" src="/pics/photo.png" alt="Photo"/>
                         </div>
                         <div className="col-md col-xl-7 col-xxl-8">
                             <p>Hi, everyone! My name is Dzmitry, and I am a Front-end developer with {this.state.experience}+ years of experience. I develop web apps using Vue and React.</p>
