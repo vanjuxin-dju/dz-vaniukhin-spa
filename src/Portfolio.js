@@ -30,6 +30,11 @@ class Portfolio extends Component {
                     title: "This website",
                     url: ""
                 },
+                {
+                    image: "/pics/filmstripjs.png",
+                    title: "Filmstrip.js library (GitHub link)",
+                    url: "https://github.com/vanjuxin-dju/filmstrip.js"
+                },
             ]
         };
     }
